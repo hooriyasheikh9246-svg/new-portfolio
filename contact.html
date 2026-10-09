@@ -4,95 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Hooria Usman</title>
+    <meta name="description" content="Get in touch with Hooria Usman for front-end website projects, local or remote. Send a message and get a reply straight to your inbox.">
+    <meta name="theme-color" content="#faf8ff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact — Hooria Usman">
+    <meta property="og:description" content="Have a project in mind? Send a message and I'll reply directly to your inbox.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c3aed'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="ambient-glow"></div>
-    <div class="grid-overlay">
-        <div class="grid-line"></div>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-veil" aria-hidden="true"><span>H.</span></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="ambient" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+    <div class="grid-overlay" aria-hidden="true">
         <div class="grid-line"></div>
         <div class="grid-line"></div>
         <div class="grid-line"></div>
         <div class="grid-line"></div>
     </div>
 
-    <div class="page-container">
-        <header class="site-header">
-            <a href="index.html" class="logo">H.</a>
-
-            <nav class="nav-links">
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Hooria Usman, home">H<span>.</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+            <nav class="nav-links" id="primaryNav" aria-label="Primary">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="work.html" class="nav-link">Work</a>
-                <a href="contact.html" class="nav-link active">Contact Me</a>
-                
-                
+                <a href="contact.html" class="nav-link nav-cta active" aria-current="page">Contact Me</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main class="content-wrapper">
-            <div class="contact-grid">
-                
-                <section class="contact-info">
-                    <div class="eyebrow">
-                        <span class="dash"></span>
-                        <span>Get In Touch</span>
+    <main id="main" class="page-main wrap">
+        <div class="contact-grid">
+            <section class="contact-info">
+                <div class="eyebrow rise" style="--d:0">
+                    <span class="dash"></span>
+                    <span>Get In Touch</span>
+                </div>
+                <h1 class="page-title">
+                    <span class="line"><span class="rise" style="--d:1">Let's work</span></span>
+                    <span class="line"><span class="rise" style="--d:2"><em>together.</em></span></span>
+                </h1>
+                <p class="contact-lead rise" style="--d:3">
+                    Have a project in mind, need a front-end website built, or looking to collaborate? Drop me a message and I'll respond directly to your inbox.
+                </p>
+
+                <div class="direct-details">
+                    <div class="detail-card" data-reveal>
+                        <span class="detail-label">Direct Email</span>
+                        <a href="mailto:hooriyasheikh9246@gmail.com" class="detail-val">hooriyasheikh9246@gmail.com</a>
                     </div>
-                    <h1 class="page-title">Let's work together.</h1>
-                    <p class="contact-lead">
-                        Have a project in mind, need a front-end website built, or looking to collaborate? Drop me a message and I'll respond directly to your inbox.
-                    </p>
-                    
-                    <div class="direct-details">
-                        <div class="detail-card">
-                            <span class="detail-label">Direct Email</span>
-                            <a href="mailto:hooriyasheikh9246@gmail.com" class="detail-val">hooriyasheikh9246@gmail.com</a>
-                        </div>
-                        <div class="detail-card">
-                            <span class="detail-label">Location</span>
-                            <span class="detail-val">Karachi, Pakistan</span>
-                        </div>
-                        <div class="detail-card">
-                            <span class="detail-label">Availability</span>
-                            <span class="detail-val">Open for Local & Remote Projects</span>
-                        </div>
+                    <div class="detail-card" data-reveal>
+                        <span class="detail-label">Location</span>
+                        <span class="detail-val">Karachi, Pakistan</span>
                     </div>
-                </section>
+                    <div class="detail-card" data-reveal>
+                        <span class="detail-label">Availability</span>
+                        <span class="detail-val">Open for Local &amp; Remote Projects</span>
+                    </div>
+                </div>
+            </section>
 
-                <section class="contact-form-box">
-                    <form class="contact-form" action="https://formspree.io/f/mbgdoewe" method="POST">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Landing Page" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
-                        </div>
-                        
-                        <input type="hidden" name="_replyto" value="hooriyasheikh9246@gmail.com">
-                        <input type="hidden" name="_subject" value="New Inquiry from Portfolio Site">
-                        
-                        <button type="submit" class="submit-btn">
-                            Send Message ↗
-                        </button>
-                    </form>
-                </section>
+            <section class="contact-form-box rise" style="--d:3">
+                <form class="contact-form" action="https://formspree.io/f/mbgdoewe" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Landing Page" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+                    </div>
 
-            </div>
-        </main>
-    </div>
+                    <input type="hidden" name="_replyto" value="hooriyasheikh9246@gmail.com">
+                    <input type="hidden" name="_subject" value="New Inquiry from Portfolio Site">
+                    <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <button type="submit" class="btn-primary submit-btn">
+                        <span class="label">Send Message</span> <span class="arrow" aria-hidden="true">↗</span>
+                    </button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>© <span data-year>2026</span> Hooria Usman. Crafted in Karachi.</p>
+            <a href="#top" class="to-top">Back to top ↑</a>
+        </div>
+    </footer>
 </body>
 </html>

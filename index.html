@@ -4,81 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hooria Usman — Front-End Web Developer</title>
+    <meta name="description" content="Hooria Usman is a front-end web developer from Karachi building clean, responsive and user-centric websites with HTML5, CSS3 and JavaScript.">
+    <meta name="theme-color" content="#faf8ff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hooria Usman — Front-End Web Developer">
+    <meta property="og:description" content="Clean, responsive and user-centric websites built with HTML5, CSS3 and JavaScript.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c3aed'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="ambient-glow"></div>
-    <div class="grid-overlay">
-        <div class="grid-line"></div>
+<body id="top" class="page-home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-veil" aria-hidden="true"><span>H.</span></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="ambient" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+    <div class="grid-overlay" aria-hidden="true">
         <div class="grid-line"></div>
         <div class="grid-line"></div>
         <div class="grid-line"></div>
         <div class="grid-line"></div>
     </div>
 
-    <div class="page-container">
-        <header class="site-header">
-            <a href="index.html" class="logo">H.</a>
-
-            <nav class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Hooria Usman, home">H<span>.</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+            <nav class="nav-links" id="primaryNav" aria-label="Primary">
+                <a href="index.html" class="nav-link active" aria-current="page">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="work.html" class="nav-link">Work</a>
-                <a href="contact.html" class="nav-link">Contact Me</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact Me</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main class="hero-section">
-            <aside class="social-sidebar">
+    <main id="main">
+        <section class="hero wrap">
+            <aside class="social-sidebar" aria-label="Social links">
                 <div class="vertical-text">
                     <span class="label">Follow</span>
-                    <a href="#">IG</a>
-                    <a href="#">LN</a>
-                    <a href="#">GH</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="LinkedIn">LN</a>
+                    <a href="#" aria-label="GitHub">GH</a>
                 </div>
             </aside>
 
-            <section class="hero-headline-block">
-                <div class="eyebrow">
+            <div class="hero-headline">
+                <div class="eyebrow rise" style="--d:0">
                     <span class="dash"></span>
                     <span>Hi, I am Hooria Usman</span>
                 </div>
                 <h1 class="hero-title">
-                    Front-end Web <br>Developer
+                    <span class="line"><span class="rise" style="--d:1">Front-end Web</span></span>
+                    <span class="line"><span class="rise" style="--d:2"><em>Developer</em></span></span>
                 </h1>
-                <div class="hero-actions">
-                    <a href="work.html" class="btn-primary">Explore Work</a>
+                <div class="hero-actions rise" style="--d:3">
+                    <a href="work.html" class="btn-primary">Explore Work <span class="arrow" aria-hidden="true">↗</span></a>
                     <a href="contact.html" class="btn-secondary">Let's Connect</a>
                 </div>
-            </section>
+            </div>
 
-            <section class="hero-bio-block">
-                <div class="bio-text-group">
-                    <div>
-                        <span class="dash"></span>
-                    </div>
-                    <p class="bio-paragraph">
-                        I am a front-end developer passionate about crafting clean, modern, and user-centric web applications. Specializing in HTML5, CSS3 layout systems like Flexbox and CSS Grid, and core JavaScript, I transform visual concepts into responsive, functional code.
-                    </p>
+            <div class="hero-bio rise" style="--d:4">
+                <p class="bio-paragraph">
+                    I am a front-end developer passionate about crafting clean, modern, and user-centric web applications. Specializing in HTML5, CSS3 layout systems like Flexbox and CSS Grid, and core JavaScript, I transform visual concepts into responsive, functional code.
+                </p>
+                <div class="hero-foot">
+                    <span class="status-pill"><span class="pulse"></span>Open for local &amp; remote projects</span>
                 </div>
+            </div>
+        </section>
+    </main>
 
-                <div class="badge-wrapper">
-                    <div class="rotating-badge" title="Front-End Developer Portfolio">
-                        <svg viewBox="0 0 100 100">
-                            <path id="circlePath" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
-                            <text font-size="10" font-weight="600" letter-spacing="2.2" fill="#111827">
-                                <textPath href="#circlePath" startOffset="0%">
-                                    · FRONT-END DEVELOPER · PORTFOLIO
-                                </textPath>
-                            </text>
-                        </svg>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>© <span data-year>2026</span> Hooria Usman. Crafted in Karachi.</p>
+            <a href="#top" class="to-top">Back to top ↑</a>
+        </div>
+    </footer>
 </body>
 </html>

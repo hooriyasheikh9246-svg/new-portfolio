@@ -4,92 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work — Hooria Usman</title>
+    <meta name="description" content="Selected front-end projects by Hooria Usman: a guest house website, a Figma-to-code e-learning platform and an e-commerce store clone.">
+    <meta name="theme-color" content="#faf8ff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Work — Hooria Usman">
+    <meta property="og:description" content="Selected front-end projects: client work, Figma-to-code builds and UI clones.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c3aed'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="work.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="ambient-glow"></div>
-    <div class="grid-overlay">
-        <div class="grid-line"></div>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-veil" aria-hidden="true"><span>H.</span></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="ambient" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+    <div class="grid-overlay" aria-hidden="true">
         <div class="grid-line"></div>
         <div class="grid-line"></div>
         <div class="grid-line"></div>
         <div class="grid-line"></div>
     </div>
 
-    <div class="page-container">
-        <header class="site-header">
-            <a href="index.html" class="logo">H.</a>
-
-            <nav class="nav-links">
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Hooria Usman, home">H<span>.</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+            <nav class="nav-links" id="primaryNav" aria-label="Primary">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="work.html" class="nav-link active">Work</a>
-                <a href="contact.html" class="nav-link">Contact Me!</a>
+                <a href="work.html" class="nav-link active" aria-current="page">Work</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact Me</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main class="content-wrapper">
-            <section class="work-hero">
-                <div class="eyebrow">
-                    <span class="dash"></span>
-                    <span>Selected Work</span>
+    <main id="main" class="page-main wrap">
+        <section class="page-header">
+            <div class="eyebrow rise" style="--d:0">
+                <span class="dash"></span>
+                <span>Selected Work</span>
+            </div>
+            <h1 class="page-title">
+                <span class="line"><span class="rise" style="--d:1">Featured <em>Projects</em></span></span>
+            </h1>
+        </section>
+
+        <section class="projects-grid">
+            <article class="project-card" data-reveal>
+                <div class="project-image-box">
+                    <div class="badge-tag">Client Work</div>
+                    <img src="guest house thumbnail.jpg" alt="Karachi Guest Houses" class="project-img" loading="lazy" decoding="async">
+                    <span class="project-index" aria-hidden="true">01</span>
                 </div>
-                <h1 class="page-title">Featured Projects</h1>
-            </section>
+                <div class="project-info">
+                    <h3>Karachi Guest Houses</h3>
+                    <p>A full web deployment featuring interactive room viewing modules, domain configuration on Cloudflare, and responsive hosting setup.</p>
+                    <div class="project-meta">
+                        <span>HTML / CSS / Web Infrastructure</span>
+                        <a href="https://karachiguesthouses.com/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </article>
 
-            <section class="projects-grid">
-                
-                <article class="project-card">
-                    <div class="project-image-box">
-                        <div class="badge-tag">Client Work</div>
-                        <img src="guest house thumbnail.jpg" alt="Karachi Guest Houses" class="project-img">
+            <article class="project-card" data-reveal>
+                <div class="project-image-box">
+                    <div class="badge-tag">Figma to Web</div>
+                    <img src="e learning site.jpg" alt="E-Learning Site" class="project-img" loading="lazy" decoding="async">
+                    <span class="project-index" aria-hidden="true">02</span>
+                </div>
+                <div class="project-info">
+                    <h3>E-Learning Community Platform</h3>
+                    <p>A multi-page educational web design translated directly from a Figma design prototype into structured, semantic front-end code.</p>
+                    <div class="project-meta">
+                        <span>Figma to Code / Responsive HTML &amp; CSS</span>
+                        <a href="https://hooriyasheikh9246-svg.github.io/E-learning-site-community-/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo <span aria-hidden="true">↗</span></a>
                     </div>
-                    <div class="project-info">
-                        <h3>Karachi Guest Houses</h3>
-                        <p>A full web deployment featuring interactive room viewing modules, domain configuration on Cloudflare, and responsive hosting setup.</p>
-                        <div class="project-meta">
-                            <span>HTML / CSS / Web Infrastructure</span>
-                            <a href="https://karachiguesthouses.com/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo ↗</a>
-                        </div>
-                    </div>
-                </article>
+                </div>
+            </article>
 
-                <article class="project-card">
-                    <div class="project-image-box">
-                        <div class="badge-tag">Figma to Web</div>
-                        <img src="e learning site.jpg" alt="E-Learning Site" class="project-img">
+            <article class="project-card" data-reveal>
+                <div class="project-image-box">
+                    <div class="badge-tag">Real-World Clone</div>
+                    <img src="ecommerce store.png" alt="Amazon Clone" class="project-img" loading="lazy" decoding="async">
+                    <span class="project-index" aria-hidden="true">03</span>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Store Clone</h3>
+                    <p>A web clone replicating the complex navigation, product grid layouts, and multi-tier interface components of an e-commerce platform.</p>
+                    <div class="project-meta">
+                        <span>UI Clone / Frontend Architecture</span>
+                        <a href="https://hooriyasheikh9246-svg.github.io/Amazon-Clone/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo <span aria-hidden="true">↗</span></a>
                     </div>
-                    <div class="project-info">
-                        <h3>E-Learning Community Platform</h3>
-                        <p>A multi-page educational web design translated directly from a Figma design prototype into structured, semantic front-end code.</p>
-                        <div class="project-meta">
-                            <span>Figma to Code / Responsive HTML & CSS</span>
-                            <a href="https://hooriyasheikh9246-svg.github.io/E-learning-site-community-/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo ↗</a>
-                        </div>
-                    </div>
-                </article>
+                </div>
+            </article>
+        </section>
 
-                <article class="project-card">
-                    <div class="project-image-box">
-                        <div class="badge-tag">Real-World Clone</div>
-                        <img src="amazon clone.png" alt="Amazon Clone" class="project-img">
-                    </div>
-                    <div class="project-info">
-                        <h3>Amazon E-Commerce Store Clone</h3>
-                        <p>A web clone replicating the complex navigation, product grid layouts, and multi-tier interface components of an e-commerce platform.</p>
-                        <div class="project-meta">
-                            <span>UI Clone / Frontend Architecture</span>
-                            <a href="https://hooriyasheikh9246-svg.github.io/Amazon-Clone/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo ↗</a>
-                        </div>
-                    </div>
-                </article>
+        <section class="cta-band" data-reveal>
+            <h2>Like what you see? Let's make something <em>together.</em></h2>
+            <a href="contact.html" class="btn-primary">Get in touch <span class="arrow" aria-hidden="true">↗</span></a>
+        </section>
+    </main>
 
-            </section>
-        </main>
-    </div>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>© <span data-year>2026</span> Hooria Usman. Crafted in Karachi.</p>
+            <a href="#top" class="to-top">Back to top ↑</a>
+        </div>
+    </footer>
 </body>
 </html>

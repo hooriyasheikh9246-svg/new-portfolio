@@ -4,67 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About — Hooria Usman</title>
+    <meta name="description" content="Background, experience and technical skills of Hooria Usman, a front-end web developer and freelance builder based in Karachi.">
+    <meta name="theme-color" content="#faf8ff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About — Hooria Usman">
+    <meta property="og:description" content="Background, experience and technical skills of a front-end web developer based in Karachi.">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c3aed'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='700'%3EH%3C/text%3E%3C/svg%3E">
+    <script>document.documentElement.classList.add('js')</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="ambient-glow"></div>
-    <div class="grid-overlay">
-        <div class="grid-line"></div>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-veil" aria-hidden="true"><span>H.</span></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="ambient" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+    <div class="grid-overlay" aria-hidden="true">
         <div class="grid-line"></div>
         <div class="grid-line"></div>
         <div class="grid-line"></div>
         <div class="grid-line"></div>
     </div>
 
-    <div class="page-container">
-        <header class="site-header">
-            <a href="index.html" class="logo">H.</a>
-
-            <nav class="nav-links">
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Hooria Usman, home">H<span>.</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+            <nav class="nav-links" id="primaryNav" aria-label="Primary">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link active">About</a>
+                <a href="about.html" class="nav-link active" aria-current="page">About</a>
                 <a href="work.html" class="nav-link">Work</a>
-                <a href="contact.html" class="nav-link">Contact Me</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact Me</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main class="page-main">
-            <section class="page-header">
-                <div class="eyebrow">
-                    <span class="dash"></span>
-                    <span>About Me</span>
+    <main id="main" class="page-main wrap">
+        <section class="page-header">
+            <div class="eyebrow rise" style="--d:0">
+                <span class="dash"></span>
+                <span>About Me</span>
+            </div>
+            <h1 class="page-title">
+                <span class="line"><span class="rise" style="--d:1">Background &amp; <em>Resume</em></span></span>
+            </h1>
+        </section>
+
+        <section class="about-grid">
+            <div class="about-bio-card" data-reveal>
+                <h2>Crafting web layouts with structural precision</h2>
+                <p>
+                    I focus on building clean, responsive visual interfaces using modern CSS layouts and modular HTML structure. My work bridges neat visual aesthetics with reliable front-end code execution.
+                </p>
+                <dl class="facts">
+                    <div><dt>Based in</dt><dd>Karachi, Pakistan</dd></div>
+                    <div><dt>Focus</dt><dd>Front-end development</dd></div>
+                    <div><dt>Status</dt><dd>Open for local &amp; remote projects</dd></div>
+                </dl>
+                <div class="cv-download-box">
+                    <a href="#" class="btn-primary">CV <span class="arrow" aria-hidden="true">↗</span></a>
                 </div>
-                <h1 class="page-title">Background & Resume</h1>
-            </section>
+            </div>
 
-            <section class="about-grid">
-                <div class="about-bio-card">
-                    <h2>Crafting web layouts with structural precision</h2>
-                    <p>
-                        I focus on building clean, responsive visual interfaces using modern CSS layouts and modular HTML structure. My work bridges neat visual aesthetics with reliable front-end code execution.
-                    </p>
-                    <div class="cv-download-box">
-                        <a href="#" class="btn-primary">CV</a>
-                    </div>
-                </div>
-
-                <div class="experience-list">
-                    <h2 class="section-subtitle">Experience & Education</h2>
-                    
-                    <div class="timeline-card">
+            <div class="experience-list">
+                <h2 class="section-subtitle" data-reveal>Experience &amp; Education</h2>
+                <div class="timeline">
+                    <div class="timeline-card" data-reveal>
                         <span class="timeline-year">2026 — Present</span>
-                        <h3>Web & App Development Student</h3>
+                        <h3>Web &amp; App Development Student</h3>
                         <p class="timeline-org">Saylani Mass IT Training (SMIT)</p>
                         <p class="timeline-desc">
                             Enrolled in modern front-end engineering, focusing on semantic HTML, CSS layout systems, responsive UI components, and JavaScript logic.
                         </p>
                     </div>
 
-                    <div class="timeline-card">
+                    <div class="timeline-card" data-reveal>
                         <span class="timeline-year">2026</span>
                         <h3>Freelance Web Developer</h3>
                         <p class="timeline-org">Local Client Projects</p>
@@ -73,21 +95,33 @@
                         </p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="skills-section">
-                <h2 class="section-subtitle">Core Technical Skillset</h2>
-                <div class="skills-pills">
-                    <span class="skill-pill">HTML5</span>
-                    <span class="skill-pill">CSS3 Layouts</span>
-                    <span class="skill-pill">Flexbox & Grid</span>
-                    <span class="skill-pill">JavaScript</span>
-                    <span class="skill-pill">Responsive Design</span>
-                    <span class="skill-pill">Git & GitHub</span>
-                    <span class="skill-pill">VS Code</span>
-                </div>
-            </section>
-        </main>
-    </div>
+        <section class="skills-section">
+            <h2 class="section-subtitle" data-reveal>Core Technical Skillset</h2>
+            <div class="skills-pills">
+                <span class="skill-pill" data-reveal>HTML5</span>
+                <span class="skill-pill" data-reveal>CSS3 Layouts</span>
+                <span class="skill-pill" data-reveal>Flexbox &amp; Grid</span>
+                <span class="skill-pill" data-reveal>JavaScript</span>
+                <span class="skill-pill" data-reveal>Responsive Design</span>
+                <span class="skill-pill" data-reveal>Git &amp; GitHub</span>
+                <span class="skill-pill" data-reveal>VS Code</span>
+            </div>
+        </section>
+
+        <section class="cta-band" data-reveal>
+            <h2>Have a project in mind? Let's <em>build it.</em></h2>
+            <a href="contact.html" class="btn-primary">Start a conversation <span class="arrow" aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>© <span data-year>2026</span> Hooria Usman. Crafted in Karachi.</p>
+            <a href="#top" class="to-top">Back to top ↑</a>
+        </div>
+    </footer>
 </body>
 </html>
